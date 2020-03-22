@@ -1,0 +1,151 @@
+*{ list-style: none; box-sizing: border-box; margin: 0; padding: 0; text-decoration: none;
+	align-self:center;}
+p{margin:2%;}
+html, .main{
+	height: 100%;
+    font-family: 'Poppins', sans-serif;
+	color: #404040;
+	letter-spacing: 0.05em;
+	font-size: 0.75rem;
+	line-height: 1.6;
+}
+.main, footer, .main-content {
+	max-width: 60rem;
+	width: 100%;
+	margin: auto;
+}
+h1, h2{
+	margin: 0.1em;
+}
+/* -------------------------- Masthead -------------------------- */
+
+header{
+	padding: 1em;
+	background-color: #e2fffc;
+}
+header .box{
+	display: grid;
+	grid-template-columns:1fr;
+	text-align: left;
+}
+.main-nav{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.main-nav li {
+	align-self:center;
+}
+.main-nav a{
+	width: 100%;
+	display: inline-block;
+	padding: 0.8em;
+	box-sizing:border-box;
+	border-bottom: 1px solid grey;
+}
+.main-nav a:hover{
+	color: #8e8e8e;
+}
+
+
+/* -------------------------- Main content -------------------------- */
+
+.main-content{
+	display: inline-block;
+	padding: 2%;
+}
+.controls{
+	max-width: 100%;
+	margin: 8px auto;
+	text-align: center;
+	display: grid;
+	grid-template-columns:1fr;
+	grid-gap:5px;
+}
+.controls a{
+	width: 100%;
+	display: inline-block;
+	box-sizing:border-box;
+	padding: 0.5em;
+    border-radius: 0.2em;
+	color: #404040;
+}
+.controls a:hover{
+	background-color: #e2fffc;
+}
+#active{
+	background-color: #656565;
+	color: #ffffff;
+}
+
+
+.content-data{
+	width: 100%;
+	background-color: #efefef;
+    border-radius: 0.5em;
+    padding: 2%;
+}
+.content-info{
+	display: grid;
+	grid-template-columns:1fr;
+}
+.content-info img{
+	width: 100%;
+}
+
+
+/* -------------------------- Footer -------------------------- */
+footer{
+	background-color: #656565;
+	color: #ffffff;
+	padding: 1em;
+	box-sizing:border-box;
+	text-align: center
+}
+footer ul{
+	max-width: 20%;
+	margin: auto;
+	text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer li{
+	margin: 0 2%;
+}
+.fab{
+	font-size: 1.3em;
+	color:#ffffff;
+}
+footer a .fab:hover{
+	color: #444444;
+}
+
+
+@media screen and (min-width: 30rem) {
+	html {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+	header .box{
+		grid-template-columns:1fr  12fr;
+		text-align: center;
+	}.main-nav{
+		grid-template-columns: 1fr 1fr 1fr 1fr ;
+	}
+	.main-nav a{
+		width: auto;
+		display: inline-block;
+		padding: 0.5em;
+		border-bottom: none;
+	}
+	.controls{
+		max-width: 70%;
+		grid-template-columns:1fr 1fr 1fr;
+	}
+	.content-info{
+		grid-template-columns:1fr 2fr;
+	}
+	.content-info img{
+		max-width: 100%;
+		max-width: 285px;
+	}
+}
